@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="10dp"
+		app:cardBackgroundColor="@color/cardview_light_background">
+
+		<LinearLayout
+			android:id="@+id/linearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/rect_rounded_peach">
+
+				<org.telegram.Adel.TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:text="@string/voiceChangerHelp"
+					android:textColor="#444"/>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<org.telegram.Adel.TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/PleaseChooseyourmode"
+					android:textColor="#444"/>
+
+				<RadioGroup
+					android:id="@+id/radio_group"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_01"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:gravity="center"
+						android:text="@string/NormalMode"
+						android:textColor="#444"/>
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_02"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/ModeWrite1"
+						android:textColor="#444"/>
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_03"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/ModeWrite2"
+						android:textColor="#444"/>
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_04"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/ModeWrite3"
+						android:textColor="#444"/>
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_05"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/ModeWrite4"
+						android:textColor="#444"/>
+
+					<org.telegram.Adel.RadioButton
+						android:id="@+id/radio_06"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/ModeWrite5"
+						android:textColor="#444"/>
+				</RadioGroup>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/confvoice"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/rect_rounded_peach"
+				android:minHeight="40dp"
+				android:orientation="vertical"
+				android:padding="5dp"/>
+
+			<Button
+				android:id="@+id/save_bottom"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/rect_rounded_green"
+				android:gravity="center"
+				android:text="@string/Save"
+				android:textColor="#FFF"
+				android:textSize="14sp"/>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+</RelativeLayout>
